@@ -40,6 +40,13 @@ echo "export mesa_glthread=true" >> ~/.profile
 sudo reboot
 ```
 
+## Install [VULKAN](https://www.vulkan.org/) and [VKBASALT](https://github.com/DadSchoorse/vkBasalt)
+```
+sudo add-apt-repository ppa:flexiondotorg/mangohud
+sudo apt install mesa-vulkan-drivers vkbasalt
+echo "export ENABLE_VKBASALT=1" >> ~/.profile
+```
+
 ## Additional settings for NVIDIA GPU & KDE
 
 On NVIDIA settings:
