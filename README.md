@@ -13,7 +13,7 @@ sudo add-apt-repository ppa:oibaf/graphics-drivers
 sudo apt dist-upgrade
 ```
 
-## Install (Liquorix)[https://liquorix.net/] kernel:
+## Install [Liquorix](https://liquorix.net/) kernel:
 ```
 sudo add-apt-repository ppa:damentz/liquorix
 sudo apt-get update
@@ -21,7 +21,7 @@ sudo apt-get install linux-image-liquorix-amd64 linux-headers-liquorix-amd64
 ```
 ## INTEL CPU optimizations 
 
-Enable (intel_pstate)[https://www.kernel.org/doc/html/v4.12/admin-guide/pm/intel_pstate.html] module, if you use Sandy Bridge or newer CPU:
+Enable [intel_pstate](https://www.kernel.org/doc/html/v4.12/admin-guide/pm/intel_pstate.html) module, if you use Sandy Bridge or newer CPU:
 ```
 sudo sed -i s/quiet\ splash/quiet\ splash\ intel_pstate=enable/g /etc/default/grub
 sudo update-grub
